@@ -8,12 +8,14 @@ Kuningatargambiitti on kolmen siirron shakkiavaus (d4 d5 c4). Tehtävänä oli s
 
 Tehtävän lopullinen vastaus oli tarkoitus esittää esim. Power BI:n tai Tableaun yhden sivun "dashboardina", mutta tämän näytön vuoksi päädyin tekemään tehtävän Jupyter Notebookilla.
 
+Asensin Jupyter Notebookin ensin macOS-käyttöjärjestelmään, mutta siinä oleva oletus-Python (v. 2.7) aiheutti ongelmia polkujen kanssa alusta lähtien. Sain nuo myöhemmin kyllä korjattua, mutta siinä välissä olin asentanut Anaconda Navigator -ympäristön jo puhtaalle Windows-virtuaalikoneelle, jolla tein tehtävän loppuun.
+
 ## Työvaiheet
 
 Työvaiheet on kommentoitu myös itse muistikirjaan, mutta ohessa työvaiheista vähän laveammin.
 
-1. Vaadittavien ohjelmakirjastojen tuonti Jupyteriin: **Pandas** tietojenkäsittelyä ja analysointia sekä **Matplotlib** grafiikkaa varten.
-2. CSV-tiedoston lukeminen muistikirjaan. Jossain vaiheessa sain ajatusken konvertoida CSV-tiedoston SQL-muotoon, mutta lopetin sen käytön aika äkkiä siitä johtuvien ongelmien takia. Tuo SQLite-tietokanta löytyy kyllä repositoriosta myös.
+1. Vaadittavien ohjelmakirjastojen asentaminen conda-ympäristöön ja tuonti Jupyteriin: **Pandas** tietojenkäsittelyä ja analysointia sekä **Matplotlib** grafiikkaa varten.
+2. CSV-tiedoston lukeminen muistikirjaan. Konvertoin CSV-tiedoston SQL-muotoon, koska ajattelin käyttää sitä ensin, mutta lopetin sen aika äkkiä siitä johtuvien ongelmien takia. Tuo SQLite-tietokanta löytyy kyllä repositoriosta myös.
 3. DataFramen luominen ja tietotyyppien tarkistus.
-4. Tietokannan yhtenäisyyden tarkistus. Toisin kuin muissa Maven Analyticsin haasteissa, tässä tietokannassa ei ollut käytännössä mitään korjattavaa. Siellä oli joitain puuttuvia tietoja esim. avausvariaatioista, mutta ei mitään sellaista, mikä olisi vaikuttanut varsinaiseen analyysiin. Myös tietotyypit olivat kunnossa. Varmistin vielä asian etsimällä kaksoiskappaleita ja tyhjiä tietueita tietokannasta, mutta se oli kunnossa myös siltä osin.
-5. 
+4. Tietokannan yhtenäisyyden tarkistus. Toisin kuin joissain muissa Maven Analyticsin haasteissa, tässä tietokannassa ei ollut käytännössä mitään korjattavaa. Siellä oli joitain puuttuvia tietoja esim. avausvariaatioista, mutta ei mitään sellaista, mikä olisi vaikuttanut varsinaiseen analyysiin. Myös tietotyypit olivat kunnossa. Varmistin vielä asiaa etsimällä kaksoiskappaleita ja tyhjiä tietueita tietokannasta, mutta se oli kunnossa myös niiltä osin.
+5. Ympyräkaavion luominen voittojen jakautumasta (valkoinen/musta/tasapeli). En ollut ennen käyttänyt Matplotlibia ja kyllä kaikenlaiset grafiikan muokkaamiset ovat äärimmäisen kankeita verrattuna em. BI-ohjelmiin. Myös yritykseni muuttaa desimaalierotin pilkuksi kaatoi koko Jupyter Notebookin (ja hävitti samalla kaikki siihen asti tallentamattomat työt), joten jätin sen suosiolla pisteeksi.
